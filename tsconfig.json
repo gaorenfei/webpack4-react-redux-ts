@@ -1,0 +1,69 @@
+{
+  "compilerOptions": {
+    /* Basic Options */
+    "target": "es5",                          /* Specify ECMAScript target version: 'ES3' (default), 'ES5', 'ES2015', 'ES2016', 'ES2017', 'ES2018', 'ES2019' or 'ESNEXT'. */
+    "module": "commonjs",                       /* Specify module code generation: 'none', 'commonjs', 'amd', 'system', 'umd', 'es2015', or 'ESNext'. */
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "esnext"
+    ],                                        /* Specify library files to be included in the compilation. */
+    "allowJs": true,                          /* Allow javascript files to be compiled. */
+    "jsx": "react",                           /* Specify JSX code generation: 'preserve', 'react-native', or 'react'. */
+    "sourceMap": true,                        /* Generates corresponding '.map' file. */
+    "outDir": "./dist",                       /* Redirect output structure to the directory. */
+    "isolatedModules": true,                  /* Transpile each file as a separate module (similar to 'ts.transpileModule'). */
+    "resolveJsonModule": true,
+    "forceConsistentCasingInFileNames": true,
+    "skipLibCheck": true,
+    "strict": true,                           /* Enable all strict type-checking options. */
+    "noImplicitThis": true,                   /* Raise error on 'this' expressions with an implied 'any' type. */
+    "noImplicitReturns": true,                /* Report error when not all code paths in function return a value. */
+    "moduleResolution": "node",               /* Specify module resolution strategy: 'node' (Node.js) or 'classic' (TypeScript pre-1.6). */
+    "baseUrl": ".",                       /* Base directory to resolve non-absolute module names. */
+    "paths": {},                                        /* A series of entries which re-map imports to lookup locations relative to the 'baseUrl'. */
+    "allowSyntheticDefaultImports": true,     /* Allow default imports from modules with no default export. This does not affect code emit, just typechecking. */
+    "esModuleInterop": true,                  /* Enables emit interoperability between CommonJS and ES Modules via creation of namespace objects for all imports. Implies 'allowSyntheticDefaultImports'. */
+    "experimentalDecorators": true,           /* Enables experimental support for ES7 decorators. */
+  },
+  "include": [
+    "./src/**/*"
+  ],
+  "exclude": [
+    "node_modules"
+  ]
+}
+
+// {
+//   "compilerOptions": {
+//     "target": "ES6", //指定ECMAScript目标版本 
+//     "sourceMap": true, //生成相应的.map文件。
+//     "baseUrl": ".", //解析非相对模块名的基准目录
+//     "jsx": "preserve", //在.tsx文件里支持JSX："React"或"Preserve"。查看JSX。
+//     "allowSyntheticDefaultImports": true, //允许从没有设置默认导出的模块中默认导入。这并不影响代码的显示，仅为了类型检查。
+//     "moduleResolution": "node",  //决定如何处理模块。或者是"Node"对于Node.js/io.js，或者是"Classic"（默认）。查看模块解析了解详情。
+//     "rootDirs": ["/src", "/test"],  //根（root）文件夹列表
+//     "forceConsistentCasingInFileNames": true,  //禁止对同一个文件的不一致的引用
+//     "noImplicitReturns": true,  //不是函数的所有返回路径都有返回值时报错。
+//     "suppressImplicitAnyIndexErrors": true,  //阻止--noImplicitAny对缺少索引签名的索引对象报错。
+//     "noUnusedLocals": true,  //若有未使用的局部变量则抛错。
+//     "allowJs": true,  //允许编译javascript文件。
+//     "experimentalDecorators": true,  //启用装饰器
+//     "module":"CommonJS",  //指定生成哪个模块系统代
+//     "paths": {    //模块名到基于baseUrl的路径映射的列表。
+//       "@/*": ["./src/*"]
+//     },
+//     "allowUnusedLabels":true, //不报告未使用的标签错误。
+//     "diagnostics":true, //显示诊断信息。
+//     "declaration":true,//生成相应的.d.ts文件。
+//     "alwaysStrict":true, //以严格模式解析并为每个源文件生成"use strict"语句
+//     "checkJs":true, //在.js文件中报告错误。与--allowJs配合使用。  检查所有js文件
+//     "help":true, //打印帮助信息。
+//     "noUnusedParameters":true,//若有未使用的参数则抛错。
+//     "pretty":true,
+//   },
+//   "include": ["./src"],
+//   "exclude": [
+//     "node_modules",
+//   ]
+// }
